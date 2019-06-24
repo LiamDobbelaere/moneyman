@@ -11,7 +11,9 @@ const MoneyChange = (props: MoneyChangeProps) => {
     <div
       className={
         "money-change " +
-        (props.moneyChangeEntry.value > 0 ? "positive" : "negative")
+        (props.moneyChangeEntry.value > 0
+          ? "money-change--positive"
+          : "money-change--negative")
       }
     >
       <span className="money-change__sign">

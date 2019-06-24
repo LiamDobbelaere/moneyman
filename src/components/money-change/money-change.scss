@@ -1,0 +1,23 @@
+@import "../../theme.scss";
+
+.money-change {
+  padding: 8px;
+
+  &__sign {
+    text-align: center;
+    width: 16px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  &__value {
+  }
+
+  &--positive {
+    background-color: $money-change-positive;
+  }
+
+  &--negative {
+    background-color: $money-change-negative;
+  }
+}

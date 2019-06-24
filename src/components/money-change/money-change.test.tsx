@@ -30,13 +30,17 @@ describe("when the component loads", () => {
   it("should use the 'positive' class if the number is positive", () => {
     const component = render(<MoneyChange moneyChangeEntry={positiveValue} />);
 
-    expect(component.container.querySelector(".positive")).toBeInTheDocument();
+    expect(
+      component.container.querySelector(".money-change--positive")
+    ).toBeInTheDocument();
   });
 
   it("should use the 'negative' class if the number is negative", () => {
     const component = render(<MoneyChange moneyChangeEntry={negativeValue} />);
 
-    expect(component.container.querySelector(".negative")).toBeInTheDocument();
+    expect(
+      component.container.querySelector(".money-change--negative")
+    ).toBeInTheDocument();
   });
 
   it("should always show the absolute value in the value part", () => {

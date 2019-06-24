@@ -21,6 +21,7 @@ const MoneyChangeList = (props: MoneyChangeListProps) => {
         })}
       </ul>
       <div className="money-change-list__total">
+        Total
         <MoneyChange moneyChangeEntry={{ value: sum }} />
       </div>
     </div>
